@@ -31,16 +31,16 @@ export function Footer(props) {
                     <h5>Find Us</h5>
                     <ul>
                         <li>WhatsApp</li>
-                        <li></li>
+                        <li>+45 23 43 43 43</li>
                     </ul>
                     <ul>
                         <li>Telefonnummer</li>
-                        <li></li>
+                        <li>+45 58 84 84 84</li>
                     </ul>
                     <ul>
                         <li>Adresse</li>
-                        <li></li>
-                        <li></li>
+                        <li>Supergatan 56,</li>
+                        <li>Oslo, Norway</li>
                     </ul>
                 </div>
             </section>
