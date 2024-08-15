@@ -11,11 +11,10 @@ function App() {
   const previewHT1 = 'One 2 One'
   const previewHT2 = 'Loyalty Free'
   const previewT = 'Lorem ipsum dolor sit amet consectetur. Nunc pellentesque senectus aliquam ipsum. Sed mauris posuere odio nisl in. Massa vitae faucibus imperdiet facilisi pulvinar maecenas platea purus pulvinar. Lacinia imperdiet nisi nunc vel ut convallis a est scelerisque'
-  const previewB1 = 'Book tid'
   const previewB2 = 'Læs mere'
   const aboutHT = 'Under the Moon - New Style' 
   const aboutPT = 'Lorem ipsum dolor sit amet consectetur. Orci elementum ullamcorper feugiat vitae faucibus. Sodales neque quisque sodales etiam tortor ut praesent. Id luctus tincidunt aenean molestie pellentesque. Viverra sit aliquam faucibus volutpat lectus sed eu euismod. Suspendisse augue ipsum pellentesque sagittis nunc. Maecenas mattis neque orci bibendum quam faucibus amet platea congue. Amet condimentum faucibus ultrices nunc varius nisl viverra vivamus amet. Habitant dictum fermentum vitae proin ut. Eu faucibus molestie lacus porttitor sed pellentesque turpis in. Aliquam'
-  const aboutBT = 'Læs mere'
+  const readMore = 'Læs mere'
   
   const images = [
     `img1.jpg`,
@@ -36,9 +35,9 @@ function App() {
     <>
       <Header title="Under The Moon" />
     
-      <About aboutHeaderText = {aboutHT} aboutParagraphText = {aboutPT} aboutButtonText = {aboutBT}/>
+      <About aboutHeaderText = {aboutHT} aboutParagraphText = {aboutPT} aboutButtonText = {readMore}/>
 
-      <Preview previewHeaderText1 = {previewHT1} previewHeaderText2 = {previewHT2} previewText = {previewT} previewButton1 = {previewB1} previewButton2 = {previewB2} />
+      <Preview previewHeaderText1 = {previewHT1} previewHeaderText2 = {previewHT2} previewText = {previewT} previewButton1 = {readMore} previewButton2 = {previewB2} />
     
       <Gallery Gallery_images={images} />
 

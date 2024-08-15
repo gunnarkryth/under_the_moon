@@ -2,33 +2,42 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    margin: 0 1rem;
 
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
 }
 
 .previewFigures {
-    background-size: cover; 
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     height: 32rem;
 
-    .previewHeaders{
+    .backgroundDarken {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #00000033;
+
+    }
+
+    .previewHeaders {
         font-size: 3rem;
         margin-bottom: 3rem;
     }
 
-    p{
+    p {
         font-size: 1.4rem;
         text-align: center;
         max-width: 30rem;
@@ -36,7 +45,7 @@
 
     }
 
-    .previewButtons{
+    .previewButtons {
         border: 1px solid white;
         background-color: #1F1F1F;
         color: white;
@@ -47,4 +56,3 @@
         text-transform: uppercase;
     }
 }
-
