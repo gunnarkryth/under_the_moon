@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { Footer } from "./assets/components/Footer/Footer"
 import { Preview } from "./assets/components/Preview/Preview";
-import "./assets/styles/App.css";
 import { Header } from "./assets/components/Header";
 import { Gallery } from "./assets/components/Gallery";
+
+import "./assets/styles/App.css";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -37,6 +39,8 @@ function App() {
       <Gallery Gallery_images={images} />
 
       <About aboutHeaderText = {aboutHT} aboutParagraphText = {aboutPT} aboutButtonText = {aboutBT}/>
+      
+      <Footer/>
     </>
   );
 }
