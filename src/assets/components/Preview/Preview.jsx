@@ -8,14 +8,18 @@ export function Preview(props) {
             <section className={style.previewSection}>
                 <div className={style.previewContainer}>
                     <figure className={style.previewFigures} style={{ backgroundImage: `url(${preview1})` }}>
-                        <h3 className={style.previewHeaders}>{props.previewHeaderText1}</h3>
-                        <p>{props.previewText}</p>
-                        <button className={style.previewButtons}>{props.previewButton1}</button>
+                        <div className={style.backgroundDarken}>
+                            <h3 className={style.previewHeaders}>{props.previewHeaderText1}</h3>
+                            <p>{props.previewText}</p>
+                            <button className={style.previewButtons}>{props.previewButton1}</button>
+                        </div>
                     </figure>
                     <figure className={style.previewFigures} style={{ backgroundImage: `url(${preview2})` }}>
-                        <h3 className={style.previewHeaders}>{props.previewHeaderText2}</h3>
-                        <p>{props.previewText}</p>
-                        <button className={style.previewButtons}>{props.previewButton2}</button>
+                        <div className={style.backgroundDarken}>
+                            <h3 className={style.previewHeaders}>{props.previewHeaderText2}</h3>
+                            <p>{props.previewText}</p>
+                            <button className={style.previewButtons}>{props.previewButton2}</button>
+                        </div>
                     </figure>
                 </div>
             </section>
