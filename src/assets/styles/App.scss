@@ -57,23 +57,27 @@ body {
             width: 33%;
           }
         }
-#root {
-  #gallery {
-    padding: 1rem;
-    h3 {
-        font-size: 2.5rem;
-      text-align: center;
-    }
-    #gallery_images {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      //   padding: 1rem;
-      gap: 1rem;
-      * {
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 390px;
+        #root {
+          #gallery {
+            padding: 1rem;
+            h3 {
+              font-size: 2.5rem;
+              text-align: center;
+            }
+            #gallery_images {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              //   padding: 1rem;
+              gap: 1rem;
+              * {
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 390px;
+              }
+            }
+          }
+        }
       }
     }
   }
