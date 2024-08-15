@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   font-style: normal;
   font-weight: 400;
   font-family: "Gilda Display", serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
 body #root header {
   background: url(../images/Hero.jpg);
   background-size: cover;
@@ -34,7 +36,6 @@ body #root header nav ul li a {
 body #root header h1 {
   align-items: center;
   padding-top: 15%;
-  padding-bottom: 2.5%;
   width: 100%;
   color: white;
   font-size: 10rem;
@@ -49,8 +50,11 @@ body #root #primer {
   overflow-y: hidden;
   color: white;
 }
-body #root #primer article p {
+body #root #primer article {
   width: 33%;
+}
+body #root #primer article h2 {
+  text-align: center;
 }
 body #root #gallery {
   padding: 1rem;
