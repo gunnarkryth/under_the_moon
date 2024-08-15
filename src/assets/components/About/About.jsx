@@ -5,7 +5,7 @@ export function About(props) {
         <>
             <section className={style.aboutSection}>
                 <h2 className={style.aboutHeader}>{props.aboutHeaderText}</h2>
-                <p className={style.aboutParagraph}>{props.aboutParagraphText}</p>
+                <p>{props.aboutParagraphText}</p>
                 <button className = {style.aboutButton}>{props.aboutButtonText}</button>
             </section>
         </>

@@ -1,0 +1,28 @@
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: uppercase;
+    .aboutHeader{
+        align-self: center;
+        font-size: 2rem;
+    }
+    p{
+        align-self: center;
+        text-align: center;
+        max-width: 44rem;
+        font-size: 0.9rem;
+
+    }
+    .aboutButton{
+        text-transform: uppercase;
+        border: 1px solid black;
+        background-color: white;
+        min-width: 8.5rem;
+        padding: 0.7rem;
+        align-self: center;
+        margin-top: 5rem;
+        font-size: 0.9rem;
+
+    }
+}
