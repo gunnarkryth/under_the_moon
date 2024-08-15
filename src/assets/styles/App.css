@@ -49,4 +49,22 @@ body #root header #primer {
 }
 body #root header #primer article {
   width: 33%;
+=======
+#root #gallery {
+  padding: 1rem;
+}
+#root #gallery h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+#root #gallery #gallery_images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+#root #gallery #gallery_images * {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 390px;
 }/*# sourceMappingURL=App.css.map */
