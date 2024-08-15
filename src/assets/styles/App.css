@@ -41,28 +41,30 @@ body #root header h1 {
   text-align: center;
   text-shadow: 0.25rem 0 1rem rgba(0, 0, 0, 0.7);
 }
-body #root header #primer {
+body #root #primer {
+  display: flex;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.3137254902);
   height: auto;
   overflow-y: hidden;
   color: white;
 }
-body #root header #primer article {
+body #root #primer article p {
   width: 33%;
-=======
-#root #gallery {
+}
+body #root #gallery {
   padding: 1rem;
 }
-#root #gallery h3 {
+body #root #gallery h3 {
   font-size: 2.5rem;
   text-align: center;
 }
-#root #gallery #gallery_images {
+body #root #gallery #gallery_images {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
-#root #gallery #gallery_images * {
+body #root #gallery #gallery_images * {
   background-position: center;
   background-size: cover;
   width: 100%;

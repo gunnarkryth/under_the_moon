@@ -1,0 +1,36 @@
+.formStyling {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+.formStyling .formHeader {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.formStyling input {
+  max-width: 24rem;
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+.formStyling input::-moz-placeholder {
+  font-size: 1rem;
+}
+.formStyling input::placeholder {
+  font-size: 1rem;
+}
+.formStyling .formButton {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  color: white;
+  background-color: #1F1F1F;
+  text-transform: uppercase;
+  max-width: 9rem;
+  padding: 0.6rem;
+}
+.formStyling .formButton:hover {
+  cursor: pointer;
+  background-color: #151515;
+}/*# sourceMappingURL=SignupForm.module.css.map */
