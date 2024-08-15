@@ -1,12 +1,13 @@
 import { useState } from "react";
-import "./src/assets/styles/style.css";
+import "./assets/styles/App.css";
+import { Gallery } from "./assets/components/Gallery";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <p>Halløj verden</p>
+      <Gallery />
     </>
   );
 }
