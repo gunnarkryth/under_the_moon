@@ -1,16 +1,28 @@
 import { useState } from "react";
-import "./assets/styles/style.css";
-
-import { About } from "./assets/components/About/About"
+import "./assets/styles/App.css";
+import { Gallery } from "./assets/components/Gallery";
 
 function App() {
-  
-  const aboutHT = 'Under the Moon - New Style' 
-  const aboutPT = 'Lorem ipsum dolor sit amet consectetur. Orci elementum ullamcorper feugiat vitae faucibus. Sodales neque quisque sodales etiam tortor ut praesent. Id luctus tincidunt aenean molestie pellentesque. Viverra sit aliquam faucibus volutpat lectus sed eu euismod. Suspendisse augue ipsum pellentesque sagittis nunc. Maecenas mattis neque orci bibendum quam faucibus amet platea congue. Amet condimentum faucibus ultrices nunc varius nisl viverra vivamus amet. Habitant dictum fermentum vitae proin ut. Eu faucibus molestie lacus porttitor sed pellentesque turpis in. Aliquam'
-  const aboutBT = 'Læs mere'
+  const [count, setCount] = useState(0);
+  const images = [
+    `img1.jpg`,
+    `img2.jpg`,
+    `img3.jpg`,
+    `img4.jpg`,
+    `img5.jpg`,
+    `img6.jpg`,
+    `img7.jpg`,
+    `img8.jpg`,
+    `img9.jpg`,
+    `img10.jpg`,
+    `img11.jpg`,
+    `img12.jpg`,
+  ];
 
   return (
     <>
+      <Gallery Gallery_images={images} />
+
       <About aboutHeaderText = {aboutHT} aboutParagraphText = {aboutPT} aboutButtonText = {aboutBT}/>
     </>
   );
