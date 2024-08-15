@@ -1,18 +1,19 @@
 import style from '../Footer/Footer.module.scss'
 import { SignupForm } from '../SignupForm/SignupForm'
 
-const 
+const formHeader = 'Subscribe to newsletter'
+const buttonText = 'Sign up'
 
-export function Footer(props) {
+export function Footer() {
     return (
         <>
             <section className={style.footerSection}>
                 <div>
-                    <SignupForm/>
+                    <SignupForm footerFormHeaderText={formHeader} footerButton={buttonText} />
                 </div>
                 <div>
-                    <h5 className={style.footerSecondHeaders}>Quick Lines</h5>
-                    <ul>
+                    <h5 className={style.footerHeaders}>Quick Lines</h5>
+                    <ul className={style.footerLists}>
                         <li>Hjem</li>
                         <li>Om os</li>
                         <li>Prisliste</li>
@@ -20,22 +21,24 @@ export function Footer(props) {
                         <li>Newsletter</li>
                         <li>Kontakt</li>
                     </ul>
-                    <h5 className={style.footerSecondHeaders}>Follow Us</h5>
-                    <span className = {style.FooterCirces}></span>
-                    <span className = {style.FooterCirces}></span>
-                    <span className = {style.FooterCirces}></span>
+                    <h5 className={style.footerHeaders}>Follow Us</h5>
+                    <div className={style.circleContainer}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div>
-                    <h5 className={style.footerSecondHeaders}>Find Us</h5>
-                    <ul>
+                    <h5 className={style.footerHeaders}>Find Us</h5>
+                    <ul className={style.footerLists}>
                         <li>WhatsApp</li>
                         <li>+45 23 43 43 43</li>
                     </ul>
-                    <ul>
+                    <ul className={style.footerLists}>
                         <li>Telefonnummer</li>
                         <li>+45 58 84 84 84</li>
                     </ul>
-                    <ul>
+                    <ul className={style.footerLists}>
                         <li>Adresse</li>
                         <li>Supergatan 56,</li>
                         <li>Oslo, Norway</li>

@@ -1,12 +1,12 @@
 import { useState } from "react";
-import "./src/assets/styles/style.css";
+// import "./src/assets/styles/style.css";
+import { Footer } from "./assets/components/Footer/Footer"
 
 function App() {
-  const [count, setCount] = useState(0);
 
   return (
     <>
-      <p>Halløj verden</p>
+      <Footer/>
     </>
   );
 }
