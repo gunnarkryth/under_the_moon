@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./assets/styles/App.css";
+import { Header } from "./assets/components/Header";
 import { Gallery } from "./assets/components/Gallery";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <>
+      <Header title="Under The Moon" />
       <Gallery Gallery_images={images} />
 
       <About aboutHeaderText = {aboutHT} aboutParagraphText = {aboutPT} aboutButtonText = {aboutBT}/>
