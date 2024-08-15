@@ -6,8 +6,8 @@ export const Header = (props) => {
       <Nav />
       <h1>{props.title}</h1>
       <section id="primer">
-        <h2>HAIRSTYLIST OG FRISØR</h2>
         <article>
+        <h2>HAIRSTYLIST OG FRISØR</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Necessitatibus quisquam exercitationem quos vitae suscipit excepturi
