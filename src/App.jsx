@@ -1,10 +1,18 @@
 import { useState } from "react";
+import { Preview } from "./assets/components/Preview/Preview";
 import "./assets/styles/App.css";
 import { Header } from "./assets/components/Header";
 import { Gallery } from "./assets/components/Gallery";
 
 function App() {
   const [count, setCount] = useState(0);
+  
+  const previewHT1 = 'One 2 One'
+  const previewHT2 = 'Loyalty Free'
+  const previewT = 'Lorem ipsum dolor sit amet consectetur. Nunc pellentesque senectus aliquam ipsum. Sed mauris posuere odio nisl in. Massa vitae faucibus imperdiet facilisi pulvinar maecenas platea purus pulvinar. Lacinia imperdiet nisi nunc vel ut convallis a est scelerisque'
+  const previewB1 = 'Book tid'
+  const previewB2 = 'Læs mere'
+  
   const images = [
     `img1.jpg`,
     `img2.jpg`,
@@ -23,6 +31,9 @@ function App() {
   return (
     <>
       <Header title="Under The Moon" />
+    
+      <Preview previewHeaderText1 = {previewHT1} previewHeaderText2 = {previewHT2} previewText = {previewT} previewButton1 = {previewB1} previewButton2 = {previewB2} />
+    
       <Gallery Gallery_images={images} />
 
       <About aboutHeaderText = {aboutHT} aboutParagraphText = {aboutPT} aboutButtonText = {aboutBT}/>
