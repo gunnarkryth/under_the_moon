@@ -22,6 +22,8 @@ function App() {
   return (
     <>
       <Gallery Gallery_images={images} />
+
+      <About aboutHeaderText = {aboutHT} aboutParagraphText = {aboutPT} aboutButtonText = {aboutBT}/>
     </>
   );
 }
